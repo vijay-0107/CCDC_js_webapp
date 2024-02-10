@@ -110,6 +110,7 @@
 .logo {
     position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
     .card:hover {
@@ -181,11 +182,9 @@
         border-radius: 0;
         border: none;
         border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
-        background: linear-gradient(
-            to bottom,
-            rgba(var(--background-start-rgb), 1),
-            rgba(var(--callout-rgb), 0.5)
-        );
+        background: linear-gradient(to bottom,
+                rgba(var(--background-start-rgb), 1),
+                rgba(var(--callout-rgb), 0.5));
         background-clip: padding-box;
         backdrop-filter: blur(24px);
     }
@@ -196,11 +195,9 @@
         inset: auto 0 0;
         padding: 2rem;
         height: 200px;
-        background: linear-gradient(
-            to bottom,
-            transparent 0%,
-            rgb(var(--background-end-rgb)) 40%
-        );
+        background: linear-gradient(to bottom,
+                transparent 0%,
+                rgb(var(--background-end-rgb)) 40%);
         z-index: 1;
     }
 }
@@ -226,7 +223,114 @@
     from {
         transform: rotate(360deg);
     }
+
     to {
         transform: rotate(0deg);
+    }
+}
+
+.main {
+    padding: 20px;
+}
+
+.gridContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.grid80 {
+    flex: 0 0 80%;
+    max-width: 80%;
+}
+
+.grid20 {
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.gridBlock {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeCarousel {
+    width: 100%;
+}
+
+.homeCarousel img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.indexIntroText,
+.indexDirMsg {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.indexIntroText h1,
+.indexDirMsg h2 {
+    margin-bottom: 10px;
+}
+
+.sideBar {
+    width: 100%;
+}
+
+.panel {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.btnRegister {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnRegister:hover {
+    background-color: #0056b3;
+}
+
+.panel h3 {
+    margin-bottom: 10px;
+}
+
+.panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.panel ul li {
+    margin-bottom: 5px;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+
+    .grid80,
+    .grid20 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .grid {
+        padding: 0;
+    }
+
+    .panel {
+        padding: 10px;
     }
 }
