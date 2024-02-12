@@ -1,13 +1,20 @@
+import styles from "./Navbar.module.css"; // Import Navbar CSS module
+import iitplogo from "../../assets/iitp2.png";
+import Image from 'next/image';
+
 export default function Navbar() {
     return (
-        <div className="header navbar">
+        <div className={styles.header}> {/* Apply combined class names */}
             <a href="http://www.iitp.ac.in/placement/">
-                <div className="college-logo">
-                    <img src="images/iitp2.png" />
-                    <div
-                        className="college-text"
-                        style={{ paddingLeft: "22px" }}
-                    >
+                <div className={styles.collegeLogo}>
+                <Image
+                    src={iitplogo}
+                    alt="IITP Logo"
+                    width={50} // Specify width
+                    height={50} // Specify height
+                    style={{ marginRight: '10px' }}
+                />
+                    <div className={styles.collegeText}>
                         <span style={{ fontSize: "18pt" }}>
                             Training and Placement Cell
                         </span>
@@ -28,12 +35,12 @@ export default function Navbar() {
                 </div>
             </a>
             <div
-                className="navbar-collapse scrollspy smooth-scroll collapse"
+                className={`${styles.navbarCollapse} ${styles.scrollspy} ${styles.smoothScroll} ${styles.collapse}`} // Apply combined class names
                 id="nav"
             >
                 <ul>
                     <li>
-                        <a href="index.php">About Us</a>
+                        <a href="/">About Us</a>
                         <ul>
                             <li>
                                 <a href="index.php">TPC Cell</a>
@@ -95,7 +102,7 @@ export default function Navbar() {
                         </ul>
                     </li>
                     <li>
-                        <a href="contactus.php">Contact Us</a>
+                        <a href="/contact-us">Contact Us</a>
                         <ul>
                             <li>
                                 <a href="contactus.php">Representatives</a>

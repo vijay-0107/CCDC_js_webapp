@@ -1,7 +1,9 @@
+import styles from "./Footer.module.css";
+
 export default function Footer() {
     return (
-        <div className="footer">
-            <div className="footer-links">
+        <div className={styles.footer}>
+            <div className={styles["footer-links"]}>
                 <ul>
                     <li>
                         <a href="index.php">About IITP</a>
@@ -106,7 +108,7 @@ export default function Footer() {
                     </li>
                     <li style={{ width: "20px" }}>
                         <div
-                            className="fb-like"
+                            className={styles["fb-like"]}
                             style={{ float: "right" }}
                             data-href="https://www.facebook.com/iitpatna.tpc"
                             data-layout="box_count"
@@ -118,7 +120,7 @@ export default function Footer() {
                 </ul>
             </div>
 
-            <div className="footer-copy">
+            <div className={styles["footer-copy"]}>
                 Copyright &copy; Indian Institute of Technology Patna
             </div>
         </div>

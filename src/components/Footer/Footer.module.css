@@ -1,0 +1,57 @@
+/* Footer Container */
+.footer {
+    position: relative;
+    padding-bottom: 100px;
+    background: radial-gradient(circle, rgba(63, 114, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+    /* background-color: #17232b; */
+}
+
+/* Footer Links */
+.footer-links {
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.footer-links > ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+.footer-links > ul li {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.footer-links > ul > li a {
+    color: #fff;
+}
+
+.footer-links > ul > li > ul {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-links > ul > li > ul > li {
+    padding-top: 5px;
+}
+
+.footer-links > ul > li > ul > li a {
+    color: #000;
+}
+
+/* Footer Copy */
+.footer-copy {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding-top: 16px;
+    text-align: center;
+    background-color: #000;
+}

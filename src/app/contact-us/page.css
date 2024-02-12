@@ -1,0 +1,100 @@
+/*!******************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[12].use[3]!./src/components/Navbar/Navbar.css ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff; /* Adjust background color as needed */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  }
+  
+  .collegeLogo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .collegeLogo img {
+    width: 50px; /* Adjust logo size */
+    height: 50px; /* Adjust logo size */
+    margin-right: 10px;
+  }
+  
+  .collegeText {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  
+  .navbarCollapse ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbarCollapse ul li {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .navbarCollapse ul li a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333; /* Adjust text color */
+  }
+  
+  .navbarCollapse ul li:hover > ul {
+    display: block;
+  }
+  
+  .navbarCollapse ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff; /* Adjust dropdown background color */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add dropdown shadow */
+  }
+  
+  .navbarCollapse ul ul li {
+    display: block;
+  }
+  
+  .navbarCollapse ul ul li a {
+    padding: 10px 20px;
+  }
+  
+  /* Media Query for responsive design */
+  @media screen and (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .collegeLogo {
+      margin-bottom: 10px;
+    }
+  
+    .navbarCollapse {
+      width: 100%;
+    }
+  
+    .navbarCollapse ul li {
+      display: block;
+      text-align: center;
+    }
+  
+    .navbarCollapse ul ul {
+      position: static;
+      box-shadow: none;
+      background-color: transparent;
+    }
+  
+    .navbarCollapse ul ul li {
+      display: block;
+      border-top: 1px solid #ccc;
+    }
+  }
+  
