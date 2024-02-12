@@ -1,10 +1,13 @@
+import styles from "./Footer.module.css";
+
 export default function Footer() {
     return (
-        <div className="footer">
-            <div className="footer-links">
+        <div className={styles.footer}>
+            <div className={styles["footer-links"]}>
                 <ul>
                     <li>
-                        <a href="index.php">About IITP</a>
+                        <p className={styles.category}>About IITP</p>
+                        <br />
                         <ul>
                             <li>
                                 <a href="index.php">T&amp;P Cell</a>
@@ -24,7 +27,8 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                        <a href="procedure.php">For Recruiters</a>
+                    <p className={styles.category}>For Recruiters</p>
+                        <br />
                         <ul>
                             <li>
                                 <a href="procedure.php">Placement Procedure</a>
@@ -38,9 +42,8 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                        <a href="http://www.iitp.ac.in/index.php/academics/programmes/undergraduate/undergraduate.html">
-                            Academics (UG)
-                        </a>
+                    <p className={styles.category}>Academics (UG)</p>
+                        <br />
                         <ul>
                             <li>
                                 <a href="http://www.iitp.ac.in/index.php/academics/programmes/undergraduate/undergraduate.html">
@@ -60,9 +63,8 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                        <a href="http://www.iitp.ac.in/index.php/academics/programmes/mtech-postgraduate/mtech-programme-overview.html">
-                            Academics (PG)
-                        </a>
+                    <p className={styles.category}>Aacdemics (PG)</p>
+                        <br />
                         <ul>
                             <li>
                                 <a href="http://www.iitp.ac.in/index.php/academics/programmes/mtech-postgraduate/mtech-programme-overview.html">
@@ -77,8 +79,9 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                        <a href="pastRec.php">T&amp;P Summary</a>
-
+                    <p className={styles.category}>T&amp;P Summary</p>
+                        
+                        <br />
                         <ul>
                             <li>
                                 <a href="pastRec.php">Past Recruiters</a>
@@ -94,7 +97,9 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                        <a href="contactus.php">Contact Us</a>
+                    <p className={styles.category}>Contact Us</p>
+                        
+                        <br />
                         <ul>
                             <li>
                                 <a href="howtoreach.php">Reaching IITP</a>
@@ -106,7 +111,7 @@ export default function Footer() {
                     </li>
                     <li style={{ width: "20px" }}>
                         <div
-                            className="fb-like"
+                            className={styles["fb-like"]}
                             style={{ float: "right" }}
                             data-href="https://www.facebook.com/iitpatna.tpc"
                             data-layout="box_count"
@@ -118,7 +123,7 @@ export default function Footer() {
                 </ul>
             </div>
 
-            <div className="footer-copy">
+            <div className={styles["footer-copy"]}>
                 Copyright &copy; Indian Institute of Technology Patna
             </div>
         </div>
