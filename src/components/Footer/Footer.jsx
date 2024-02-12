@@ -27,7 +27,7 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                    <p className={styles.category}>For Recruiters</p>
+                        <p className={styles.category}>For Recruiters</p>
                         <br />
                         <ul>
                             <li>
@@ -42,7 +42,7 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                    <p className={styles.category}>Academics (UG)</p>
+                        <p className={styles.category}>Academics (UG)</p>
                         <br />
                         <ul>
                             <li>
@@ -63,7 +63,7 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                    <p className={styles.category}>Aacdemics (PG)</p>
+                        <p className={styles.category}>Aacdemics (PG)</p>
                         <br />
                         <ul>
                             <li>
@@ -79,8 +79,8 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                    <p className={styles.category}>T&amp;P Summary</p>
-                        
+                        <p className={styles.category}>T&amp;P Summary</p>
+
                         <br />
                         <ul>
                             <li>
@@ -97,8 +97,8 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                    <p className={styles.category}>Contact Us</p>
-                        
+                        <p className={styles.category}>Contact Us</p>
+
                         <br />
                         <ul>
                             <li>
