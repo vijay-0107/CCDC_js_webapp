@@ -333,3 +333,55 @@
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+.external{
+    background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,0) 100%);
+}
+
+.bggrid{
+    
+    margin: 0 10%;
+}
+
+.aboutContent{
+    padding: 0 2%;
+    background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,0) 100%);
+    color: #222;
+}
+.instiImage {
+    display: flex;
+    justify-content: center; /* Horizontally center the image */
+    align-items: center; /* Vertically center the image */
+    margin: 50px 0;
+  }
+  
+  .instiImage img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .container {
+    display: flex;
+  }
+  
+  .content {
+    flex: 3;
+    padding-right: 20px; /* Adjust as needed for spacing between content and image */
+  }
+  
+  .image {
+    flex: 2;
+    margin: 5%;
+  }
+  
+  /* Assuming your image should take up the full width of its container */
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .titleContent{
+    display: inline;
+    border-bottom: 1px solid rgba(0,0,0,.4);
+    padding-bottom: 5px;
+  }

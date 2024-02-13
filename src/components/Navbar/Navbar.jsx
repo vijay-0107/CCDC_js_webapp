@@ -23,8 +23,8 @@ export default function Navbar() {
                         </span>
                         <br />
                         <h3>
-                            Indian Institute of Technology Patna
-                            <br />
+                        Indian Institute of Technology Patna
+                        <br />
                             <span style={{ fontSize: "18pt" }}>
                                 भारतीय प्रौद्योगिकी संस्थान पटना
                             </span>

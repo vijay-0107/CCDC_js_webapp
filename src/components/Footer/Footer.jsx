@@ -63,7 +63,7 @@ export default function Footer() {
                         </ul>
                     </li>
                     <li>
-                    <p className={styles.category}>Aacdemics (PG)</p>
+                    <p className={styles.category}>Academics (PG)</p>
                         <br />
                         <ul>
                             <li>
